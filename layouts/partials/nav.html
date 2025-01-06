@@ -1,0 +1,20 @@
+<nav>
+  <div class="container-nav" style="background-color: #ccc ;">
+    <a class="navbar-brand" href="/"> <img src="\seyerle.png" id="wappen"> <span id="wappentext">Guido Seyerle</span></a>
+    <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fa-solid fa-bars fa-beat" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.2; --fa-animation-iteration-count: 5"></i></label>
+      <div class="wrapper">
+        <ul>
+          {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            <li>
+                <a class="{{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL }}">
+                <span>{{ .Name }}</span></a>
+            </li>
+            {{ end }}
+        </ul>
+      </div>
+  </div>
+</nav>
+
+<!-- fas fa-bars-->

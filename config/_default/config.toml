@@ -1,0 +1,10 @@
+baseURL = 'https://ta-moebius.onrender.com/'
+languageCode = 'de-de'
+title = 'Biowinzer Guido Seyerle'
+
+assetdir = 'static'
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+enableGitInfo = true

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="container">
+    {{ with .Params.title }}<h1>{{ . }}</h1>{{ end }}
+    <br>
+    {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
+    <br>
+    <br>
+    {{ .Content }}
+    <br>
+</div>
+
+{{ end }}
