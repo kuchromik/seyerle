@@ -20,25 +20,10 @@ collections:
   - name: 'pages'
     label: 'Pages'
     files: [
-      {name: home, label: Home, file: content/_index.md,
+      {name: 'home', label: 'Home', file: 'content/_index.md',
       fields:[
-        {name: titel, widget: string},
-        {name: body, widget: markdown}]
-        },
-      {name: biowein, label: Biowein, file: content/biowein.md,
-      fields:[
-        {name: titel, widget: string},
-        {name: body, widget: markdown}]
-        },
-      {name: leere-flaschen, label: Leere-Flaschen, file: content/Leere-Flaschen.md,
-      fields:[
-        {name: titel, widget: string},
-        {name: body, widget: markdown}]
-        },
-      {name: impressum, label: Impressum, file: content/impressum.md,
-      fields:[
-        {name: titel, widget: string},
-        {name: body, widget: markdown}]
+        {name: 'titel', widget: 'string'},
+        {name: 'body', widget: 'markdown'}]
         }
       ]
    
