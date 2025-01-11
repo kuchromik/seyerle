@@ -21,6 +21,6 @@ collections:
     label: 'Pages'
     files: [
       { name: 'home', label: 'Home', file: 'content/_index.md',
-        }
-      ]
+      fields: [ {label: 'Title', name: 'title', widget: 'string'}, { label: 'Body', name: 'body', widget: 'markdown' } ]
+      }]
    
