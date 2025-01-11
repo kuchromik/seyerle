@@ -1,1 +1,45 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: static/img
+public_folder: /img
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
 
+collections:
+  - name: 'page'
+    label: 'Page'
+    files: [
+      {name: home, label: Home, file: content/_index.md,
+      fields:[
+        {name: titel, widget: string},
+        {name: body, widget: markdown}]
+        },
+      {name: biowein, label: Biowein, file: content/biowein.md,
+      fields:[
+        {name: titel, widget: string},
+        {name: body, widget: markdown}]
+        },
+      {name: leere-flaschen, label: Leere-Flaschen, file: content/Leere-Flaschen.md,
+      fields:[
+        {name: titel, widget: string},
+        {name: body, widget: markdown}]
+        },
+      {name: impressum, label: Impressum, file: content/impressum.md,
+      fields:[
+        {name: titel, widget: string},
+        {name: body, widget: markdown}]
+        }
+    ]
+   
