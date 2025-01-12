@@ -18,7 +18,7 @@ menu:
 
 <br>
 
-<img src="https://github.com/kuchromik/seyerle/blob/master/static/weinglass_640.jpg">
+<img src="https://github.com/kuchromik/seyerle/static/weinglass_640.jpg">
 
 <br>
 
