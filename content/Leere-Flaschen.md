@@ -14,7 +14,7 @@ menu:
 
 <br>
 
-![Flaschen](/bottles_640.jpg "Flaschen")
+![Flaschen](https://chromikoffsetdruck.de/seyerle/bottles_640.jpg "Flaschen")
 
 <br>
 
